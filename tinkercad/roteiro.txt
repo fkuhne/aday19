@@ -1,0 +1,41 @@
+1. qr code para o GitHub
+
+2. link para video marcela
+
+3. tinkered
+
+4. passear pelo site do tinkercad, mostrando o seguinte:
+ - blog / getting started (https://blog.tinkercad.com/getting-started-in-tinkercad/)
+ - video Welcome to Tinkercad (https://www.youtube.com/watch?v=LrU2zm_g7lE)
+ - galeria de circuitos
+ - usuário
+ - meus circuitos
+
+
+1. cenário: escrevendo programas na IDE, executando na placa, e comunicando-se via porta serial
+
+2. Veremos as funções básicas primeiro
+
+3. Utilizando componentes e circuitos simples
+
+4. O Arduino usado será o Uno, com suas entradas e saídas, analógicas e digitais
+
+5. Blink (pinMode e digitalWrite) OK
+
+6. Botão e LED (digitalRead) OK
+
+7. Entrada analógica (analogWrite e potenciômetro) OK
+   - mostrar com um scope do Tinkercad o valor do potenciômetro
+   - mostrar o valor do AD na Serial
+   - adicionar um LED e fazer o potenciômetro variar o delay (só se der tempo)
+
+9. Entrada analógica e saída analógica com LED OK
+   - chamar a atenção para a diferença do pino!
+   - explicar a função do map
+   - mostrar os dados pela serial
+
+10. Posicionamento do servo com potenciômetro (lib Servo) OK
+
+12. Sensor ultrassônico com Serial OK
+
+13. Sensor ultrassônico com display LCD OK
