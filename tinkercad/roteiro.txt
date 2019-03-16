@@ -12,30 +12,59 @@
  - meus circuitos
 
 
-1. cenário: escrevendo programas na IDE, executando na placa, e comunicando-se via porta serial
+5. cenário: escrevendo programas na IDE, executando na placa, e comunicando-se via porta serial
 
-2. Veremos as funções básicas primeiro
+6. Veremos as funções básicas primeiro
 
-3. Utilizando componentes e circuitos simples
+7. Utilizando componentes e circuitos simples
 
-4. O Arduino usado será o Uno, com suas entradas e saídas, analógicas e digitais
+8. O Arduino usado será o Uno, com suas entradas e saídas, analógicas e digitais
 
-5. Blink (pinMode e digitalWrite) OK
+----
 
-6. Botão e LED (digitalRead) OK
+9. Blink (pinMode e digitalWrite) OK
 
-7. Entrada analógica (analogWrite e potenciômetro) OK
-   - mostrar com um scope do Tinkercad o valor do potenciômetro
+----
+
+10. Botão e LED (digitalRead) OK
+
+EXERCICIO: Rodar, verificar que o LED não pisca, e perguntar onde está o erro (é no pino do botão. No lugar do 2 é na verdade o 7)
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(7, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  
+  bool digitalInput = digitalRead(7);
+  
+  digitalWrite(13, digitalInput);
+  
+  Serial.print("O botao esta ");
+  digitalInput?Serial.println("ligado"):Serial.println("desligado");
+  
+  delay(200);
+}
+
+----
+
+11. Entrada analógica (analogWrite e potenciômetro) OK
+   - mostrar com um cope do Tinkercad o valor do potenciômetro
    - mostrar o valor do AD na Serial
    - adicionar um LED e fazer o potenciômetro variar o delay (só se der tempo)
 
-9. Entrada analógica e saída analógica com LED OK
+12. Entrada analógica e saída analógica com LED OK
    - chamar a atenção para a diferença do pino!
    - explicar a função do map
    - mostrar os dados pela serial
 
-10. Posicionamento do servo com potenciômetro (lib Servo) OK
+13. Posicionamento do servo com potenciômetro (lib Servo) OK
+   - mostrar o uso de bibliotecas
 
-12. Sensor ultrassônico com Serial OK
+13. Sensor ultrassônico com Serial OK
 
-13. Sensor ultrassônico com display LCD OK
+14. Sensor ultrassônico com display LCD OK
